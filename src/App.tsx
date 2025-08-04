@@ -943,6 +943,49 @@ function App() {
         </div>
       </section>
 
+      {/* FAQ Section */}
+      <section className="py-20 px-4">
+        <div className="max-w-4xl mx-auto">
+          <h2 className="text-4xl md:text-5xl font-black text-center mb-16 text-orange-500">
+            Perguntas Frequentes
+          </h2>
+          
+          <div className="space-y-6">
+            {[
+              {
+                question: "O protocolo realmente funciona?",
+                answer: "Sim! Baseado em estudos científicos sobre jejum intermitente e metabolismo, nosso protocolo já ajudou milhares de pessoas a alcançarem seus objetivos de emagrecimento de forma saudável e sustentável."
+              },
+              {
+                question: "É seguro fazer jejum?",
+                answer: "O jejum intermitente, quando feito corretamente, é completamente seguro para a maioria das pessoas. Nosso protocolo inclui todas as orientações necessárias para uma prática segura e eficaz."
+              },
+              {
+                question: "Quanto tempo leva para ver resultados?",
+                answer: "Muitas pessoas relatam mudanças já na primeira semana, incluindo mais energia e redução do inchaço. Resultados mais significativos de perda de peso geralmente aparecem entre 2-4 semanas."
+              },
+              {
+                question: "Posso tomar outros líquidos durante o jejum?",
+                answer: "O protocolo é específico para café preto, mas também inclui orientações sobre outros líquidos permitidos durante o período de jejum para maximizar os resultados."
+              },
+              {
+                question: "E se eu não gostar de café?",
+                answer: "O protocolo inclui alternativas e adaptações para pessoas que não consomem café, garantindo que todos possam se beneficiar do método."
+              }
+            ].map((faq, index) => (
+              <div key={index} className="bg-gray-800 rounded-xl p-6 border border-orange-500/20">
+                <h3 className="text-xl font-bold text-orange-300 mb-3">
+                  {faq.question}
+                </h3>
+                <p className="text-gray-300 leading-relaxed">
+                  {faq.answer}
+                </p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* SEÇÃO 7 - O QUE VOCÊ RECEBE + OFERTA PRINCIPAL */}
       <section id="offer-section" className="py-20 bg-gradient-to-br from-black via-gray-900 to-black">
         <div className="container mx-auto px-4">
