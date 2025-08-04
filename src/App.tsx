@@ -943,80 +943,6 @@ function App() {
         </div>
       </section>
 
-      {/* FAQ Section */}
-      <section className="py-20 px-4">
-        <div className="max-w-4xl mx-auto">
-          <h2 className="text-4xl md:text-5xl font-black text-center mb-16 text-orange-500">
-            Perguntas Frequentes
-          </h2>
-          
-          <div className="space-y-6">
-            {[
-              {
-                question: "O protocolo realmente funciona?",
-                answer: "Sim! Baseado em estudos científicos sobre jejum intermitente e metabolismo, nosso protocolo já ajudou milhares de pessoas a alcançarem seus objetivos de emagrecimento de forma saudável e sustentável."
-              },
-              {
-                question: "É seguro fazer jejum?",
-                answer: "O jejum intermitente, quando feito corretamente, é completamente seguro para a maioria das pessoas. Nosso protocolo inclui todas as orientações necessárias para uma prática segura e eficaz."
-              },
-              {
-                question: "Quanto tempo leva para ver resultados?",
-                answer: "Muitas pessoas relatam mudanças já na primeira semana, incluindo mais energia e redução do inchaço. Resultados mais significativos de perda de peso geralmente aparecem entre 2-4 semanas."
-              },
-              {
-                question: "Posso tomar outros líquidos durante o jejum?",
-                answer: "O protocolo é específico para café preto, mas também inclui orientações sobre outros líquidos permitidos durante o período de jejum para maximizar os resultados."
-              },
-              {
-                question: "E se eu não gostar de café?",
-                answer: "O protocolo inclui alternativas e adaptações para pessoas que não consomem café, garantindo que todos possam se beneficiar do método."
-              }
-            ].map((faq, index) => (
-              <div key={index} className="bg-gray-800 rounded-xl p-6 border border-orange-500/20">
-                <h3 className="text-xl font-bold text-orange-300 mb-3">
-                  {faq.question}
-                </h3>
-                <p className="text-gray-300 leading-relaxed">
-                  {faq.answer}
-                </p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* SEÇÃO 7 - O QUE VOCÊ RECEBE + OFERTA PRINCIPAL */}
-      <section id="offer-section" className="py-20 bg-gradient-to-br from-black via-gray-900 to-black">
-        <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-4xl md:text-5xl font-black mb-12 text-white">
-              UM GUIA PARA O <span className="text-orange-500">CORPO</span>, UM CAMINHO PARA A <span className="text-yellow-500">MENTE</span>, UMA FERRAMENTA PARA A <span className="text-green-500">FÉ</span>
-            </h2>
-            
-            <div className="bg-gray-800/50 backdrop-blur-sm rounded-2xl p-8 md:p-12 mb-12">
-              <div className="space-y-4 text-left max-w-2xl mx-auto">
-                {[
-                  "📜 Método divino de jejum com princípios naturais e espirituais",
-                  "🕊️ Roteiro devocional para 7, 14 e 30 dias",
-                  "🍽️ Ajustes de rotina sem dieta restritiva",
-                  "📖 Versículos e orações para manter o foco",
-                  "🔥 Calendário visual de progresso"
-                ].map((item, index) => (
-                  <p key={index} className="text-lg md:text-xl text-gray-300">{item}</p>
-                ))}
-              </div>
-            </div>
-            
-            <div id="offer-box" className="bg-gradient-to-r from-orange-500/20 to-yellow-500/20 rounded-2xl p-8 md:p-12 mb-12">
-              <img 
-                src="https://i.postimg.cc/sxP7D9wx/jejum-cafe-preto-semfundo.webp" 
-                alt="Mockup do Protocolo"
-                className="w-full max-w-2xl mx-auto mb-8 rounded-2xl shadow-2xl"
-              />
-              
-              <h3 className="text-3xl md:text-4xl font-black mb-8 text-white">
-                💣 TUDO ISSO POR APENAS:
               </h3>
               
               <div className="mb-8">
@@ -1216,6 +1142,80 @@ function App() {
               <p className="text-sm text-gray-400">
                 <Clock className="w-4 h-4 inline mr-1" />
                 Oferta por tempo limitado
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* FAQ Section */}
+      <section className="py-20 bg-gray-900">
+        <div className="container mx-auto px-4 max-w-4xl">
+          <h2 className="text-4xl md:text-5xl font-black text-center mb-16">
+            PERGUNTAS <span className="text-orange-500">FREQUENTES</span>
+          </h2>
+          
+          <div className="space-y-6">
+            <div className="bg-gray-800 rounded-xl p-6">
+              <h3 className="text-xl font-bold text-orange-500 mb-3">
+                Jejum com café preto é seguro?
+              </h3>
+              <p className="text-gray-300 leading-relaxed">
+                Sim, é um método natural usado há séculos. Sempre consulte um médico se tiver condições específicas.
+              </p>
+            </div>
+            
+            <div className="bg-gray-800 rounded-xl p-6">
+              <h3 className="text-xl font-bold text-orange-500 mb-3">
+                Posso tomar mais de uma xícara?
+              </h3>
+              <p className="text-gray-300 leading-relaxed">
+                O protocolo recomenda 1 xícara em jejum. Mais pode ser consumido durante o dia conforme tolerância.
+              </p>
+            </div>
+            
+            <div className="bg-gray-800 rounded-xl p-6">
+              <h3 className="text-xl font-bold text-orange-500 mb-3">
+                Posso adaptar o protocolo?
+              </h3>
+              <p className="text-gray-300 leading-relaxed">
+                Sim, o guia inclui adaptações para diferentes perfis e necessidades.
+              </p>
+            </div>
+            
+            <div className="bg-gray-800 rounded-xl p-6">
+              <h3 className="text-xl font-bold text-orange-500 mb-3">
+                Como acesso o material?
+              </h3>
+              <p className="text-gray-300 leading-relaxed">
+                Imediatamente após a compra, você recebe o acesso por email.
+              </p>
+            </div>
+            
+            <div className="bg-gray-800 rounded-xl p-6">
+              <h3 className="text-xl font-bold text-orange-500 mb-3">
+                Tem grupo de suporte?
+              </h3>
+              <p className="text-gray-300 leading-relaxed">
+                Sim, grupo exclusivo no WhatsApp para os primeiros 300 participantes.
+              </p>
+            </div>
+            
+            <div className="bg-gray-800 rounded-xl p-6">
+              <h3 className="text-xl font-bold text-orange-500 mb-3">
+                Funciona mesmo se eu não fizer dieta?
+              </h3>
+              <p className="text-gray-300 leading-relaxed">
+                O protocolo é focado no jejum com café. Não requer dieta restritiva.
+              </p>
+            </div>
+            
+            <div className="bg-gray-800 rounded-xl p-6">
+              <h3 className="text-xl font-bold text-orange-500 mb-3">
+                Ajuda com dores de cabeça ou enxaqueca?
+              </h3>
+              <p className="text-gray-300 leading-relaxed">
+                Muitas mulheres relataram redução ou desaparecimento das crises, principalmente ligadas ao jejum e ao café puro, que reduz inflamações. Resultados podem variar.
               </p>
             </div>
           </div>
